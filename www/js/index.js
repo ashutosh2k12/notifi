@@ -90,7 +90,7 @@ function numberForm(parentid,appid)
 	 $("#mobileForm").on("submit",function(e) {
 				//disable the button so we can't resubmit while we wait
                 var number = $("#cellnumber").val();
-				alert('number submit.Parentid='+parentid+' and hardwareid='+tempid);
+				alert('number submit.Parentid='+parentid+' and hardwareid='+tempid+' and appid='+appid);
                 if(number != '') {
                         $("#registerButton",this).attr("disabled","disabled");
                         saveNumber(number, tempid,parentid,appid);
